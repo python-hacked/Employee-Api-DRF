@@ -22,3 +22,5 @@ class EmployeeUpdateApi(generics.RetrieveUpdateAPIView):
 class EmployeeDeleteApi(generics.DestroyAPIView):
     queryset = Employee.objects.all()
     serializer_class = EmployeeSerializer
+
+    
