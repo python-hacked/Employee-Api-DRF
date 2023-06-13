@@ -7,3 +7,6 @@ urlpatterns = [
     path('api/<int:pk>', EmployeeUpdateApi.as_view()),
     path('api/<int:pk>/delete', EmployeeDeleteApi.as_view()),
 ]
+
+
+
