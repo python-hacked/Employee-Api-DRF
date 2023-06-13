@@ -15,7 +15,7 @@ SECRET_KEY = '@1$0-yu_!_z!2@c_fb@a@9rq_0zxe^p2wyu0wa)&((f_hp%ld$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -66,34 +66,34 @@ WSGI_APPLICATION = 'drf.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
-
-
 DATABASES = {
-
     'default': {
-
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-
-        'NAME': 'employee_jod5',
-
-        'USER': 'employee_jod5_user',
-
-        'PASSWORD': '44hvbfXQkbX0geTYAzLWQ7c9M4t0HSpm',
-
-        'HOST': 'dpg-chdk4ajhp8u3v7165oa0-a',
-
-        'PORT': '5432',
-
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
-
 }
+
+
+
+# DATABASES = {
+
+#     'default': {
+
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+
+#         'NAME': 'employee_jod5',
+
+#         'USER': 'employee_jod5_user',
+
+#         'PASSWORD': '44hvbfXQkbX0geTYAzLWQ7c9M4t0HSpm',
+
+#         'HOST': 'dpg-chdk4ajhp8u3v7165oa0-a',
+
+#         'PORT': '5432',
+
+#     }
+
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
